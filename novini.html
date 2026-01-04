@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="bg">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Новини | Естествено изкуство</title>
+  <meta name="description" content="Актуална информация за текущи и бъдещи събития на Естествено изкуство." />
+  <meta name="keywords" content="новини, събития, изложби, художници, култура, естествено изкуство" />
+  <meta name="author" content="Мираела Казанджиева" />
+
+  <link rel="stylesheet" href="novini.css" />
+  <script defer src="novini.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="nachalo.html">
+        <img src="LOGO.png" class="logo" alt="Лого" />
+        <div class="brand-text">
+          <div class="name">ЕСТЕСТВЕНО ИЗКУСТВО</div>
+          <div class="slogan">Преди да станат известни</div>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <a href="nachalo.html">Начало</a>
+        <a class="active" href="novini.html">Новини</a>
+        <a href="galeriq.html">Галерия</a>
+        <a href="zanas.html">За нас</a>
+        <a href="kontakti.html">Контакти</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-small">
+      <div class="container hero-grid">
+        <div>
+          <p class="kicker">Актуално</p>
+          <h1>Новини и събития</h1>
+        </div>
+
+        <div class="tools">
+          <label class="field">
+            <span>Търси</span>
+            <input id="search" type="search" placeholder="пример: изложба, покана" />
+          </label>
+
+          <label class="field">
+            <span>Филтър</span>
+            <select id="typeFilter">
+              <option value="all">Всички</option>
+              <option value="event">Събития</option>
+              <option value="call">Отворени покани</option>
+              <option value="update">Обяви</option>
+            </select>
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Предстоящи събития</h2>
+          <p class="muted">Планирани инициативи, към които можеш да се включиш.</p>
+        </div>
+
+        <div id="upcomingList" class="news-grid">
+          <article class="news-card" data-type="event" data-title="Онлайн изложба: Нощни форми" data-date="2026-01-10">
+            <div class="top">
+              <span class="badge upcoming">Предстоящо</span>
+              <time datetime="2026-01-10">10.01.2026</time>
+            </div>
+            <h3>Онлайн изложба: „Нощни форми“</h3>
+            <p class="muted">
+              Подбор от работи на независими художници с фокус върху контрасти и градска естетика.
+            </p>
+            <div class="meta">
+              <span>Място: Онлайн</span>
+              <span>Час: 19:00</span>
+              <span class="tag">Събитие</span>
+            </div>
+          </article>
+
+          <article class="news-card" data-type="call" data-title="Отворена покана: Преди да станат известни" data-date="2026-01-12">
+            <div class="top">
+              <span class="badge upcoming">Предстоящо</span>
+              <time datetime="2026-02-12">12.02.2026</time>
+            </div>
+            <h3>Отворена покана: „Преди да станат известни“</h3>
+            <p class="muted">
+              Приемаме портфолиа за следващото представяне на нови автори. Кандидатстването е до 25.01.
+            </p>
+            <div class="meta">
+              <span>Място: Онлайн</span>
+              <span>Час: До 25.01 18:00</span>
+              <span class="tag">Покана</span>
+            </div>
+          </article>
+
+          <article class="news-card" data-type="update" data-title="Партньорство: ИУ - Варна" data-date="2026-01-18">
+            <div class="top">
+              <span class="badge upcoming">Предстоящо</span>
+              <time datetime="2026-01-18">18.01.2026</time>
+            </div>
+            <h3>Ново партньорство: ИУ - Варна</h3>
+            <p class="muted">
+              Започваме съвместна инициатива за популяризиране на млади автори и студентски проекти.
+            </p>
+            <div class="meta">
+              <span>Място: Варна</span>
+              <span>Час: 14:00</span>
+              <span class="tag">Обява</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Актуално</h2>
+        </div>
+
+        <div id="currentList" class="news-grid">
+          <article class="news-card" data-type="event" data-title="Среща с автор: Мираела Казанджиева" data-date="2026-01-03">
+            <div class="top">
+              <span class="badge live">Текущо</span>
+              <time datetime="2026-01-05">05.01.2026</time>
+            </div>
+            <h3>Среща с автор: Мираела Казанджиева</h3>
+            <p class="muted">
+              Кратка онлайн среща и разговор за процеса: портрети и графика.
+            </p>
+            <div class="meta">
+              <span>Място: Онлайн</span>
+              <span>Час: 18:30</span>
+              <span class="tag">Събитие</span>
+            </div>
+          </article>
+
+          <article class="news-card" data-type="update" data-title="Нови работи в галерията" data-date="2026-01-02">
+            <div class="top">
+              <span class="badge new">Ново</span>
+              <time datetime="2026-01-02">02.01.2026</time>
+            </div>
+            <h3>Нови призведения в галерията</h3>
+            <p class="muted">
+              Добавихме нови изображения и описания към профилите на двамата художници.
+            </p>
+            <div class="meta">
+              <span>Място: Галерия</span>
+              <span> 12 изображения</span>
+              <span class="tag">Обява</span>
+            </div>
+            <a class="btn pill" href="galeriq.html">Към галерията</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div id="emptyState" class="empty" hidden>
+          <h3>Няма резултати...</h3>
+          <p class="muted">Пробвай с различна дума или смени филтъра.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-top">
+      <div>
+        <h4>Страници</h4>
+        <a href="nachalo.html">Начало</a>
+        <a href="novini.html">Новини</a>
+        <a href="galeriq.html">Галерия</a>
+        <a href="zanas.html">За нас</a>
+        <a href="kontakti.html">Контакти</a>
+      </div>
+
+      <div>
+        <h4>Социални</h4>
+        <a href="https://www.instagram.com/uevarna/" rel="">Instagram</a>
+        <a href="https://www.tiktok.com/@uestudents" rel="">TikTok</a>
+        <a href="https://www.youtube.com/user/uevarnabg" rel="">YouTube</a>
+      </div>
+
+      <div>
+        <h4>Партньори</h4>
+        <a href="https://www.ue-varna.bg/" rel="">ИУ - Варна</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>ИУ - Варна</span>
+      <span>© Мираела Казанджиева</span>
+      <span>2026</span>
+    </div>
+  </footer>
+</body>
+</html>

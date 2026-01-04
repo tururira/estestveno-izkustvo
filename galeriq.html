@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="bg">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Галерия | Естествено изкуство</title>
+  <meta name="description" content="Галерия с произведения на неизвестни художници: Мираела Казанджиева и Антон Штучка." />
+  <meta name="keywords" content="галерия, произведения, изкуство, Мираела Казанджиева, Антон Штучка" />
+  <meta name="author" content="Мираела Казанджиева" />
+
+  <link rel="stylesheet" href="galeriq.css" />
+  <script defer src="galeriq.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="nachalo.html">
+        <img src="LOGO.png" class="logo" alt="Лого" />
+        <div class="brand-text">
+          <div class="name">ЕСТЕСТВЕНО ИЗКУСТВО</div>
+          <div class="slogan">Преди да станат известни</div>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <a href="nachalo.html">Начало</a>
+        <a href="novini.html">Новини</a>
+        <a class="active" href="galeriq.html">Галерия</a>
+        <a href="zanas.html">За нас</a>
+        <a href="kontakti.html">Контакти</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="kicker">Галерия</p>
+          <h1>Произведения</h1>
+          <p class="sub">Разгледай работите на нашите неизвестни художници! Кликни върху изображение за преглед.</p>
+        </div>
+
+        <div class="filters" aria-label="Филтри на галерията">
+          <button class="chip active" data-filter="all">Всички</button>
+          <button class="chip" data-filter="miraela">Мираела</button>
+          <button class="chip" data-filter="anton">Антон</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- moeto -->
+    <section class="section" data-group="miraela">
+      <div class="container">
+        <div class="section-head">
+          <h2>Мираела Казанджиева</h2>
+          <p class="muted">@tururira.ra</p>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="tile" data-artist="miraela">
+            <img src="images/moq2.jpg" alt="Графика, 30х20" loading="lazy">
+          </figure>
+          <figure class="tile" data-artist="miraela">
+            <img src="images/moq1.jpg" alt="Графика, 30х20" loading="lazy">
+          </figure>
+          <figure class="tile" data-artist="miraela">
+            <img src="images/moq3.jpg" alt="Графика, 20х30" loading="lazy">
+          </figure>
+          <figure class="tile" data-artist="miraela">
+            <img src="images/moq4.jpg" alt="Акрилни бои, 50х50" loading="lazy">
+          </figure>
+          <figure class="tile" data-artist="miraela">
+            <img src="images/moq5.jpg" alt="Маслени бои, 50х40" loading="lazy">
+          </figure>
+          <figure class="tile" data-artist="miraela">
+            <img src="images/moq6.jpg" alt="Акрилни бои, 40х40" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- na toni -->
+    <section class="section" data-group="anton">
+      <div class="container">
+        <div class="section-head">
+          <h2>Антон Штучка</h2>
+          <p class="muted">@tonkatakorn</p>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="tile" data-artist="anton">
+            <img src="images/viber_image_2026-01-03_19-52-52-230.jpg" alt="Дигитална, котка" loading="lazy">
+          </figure>
+          <figure class="tile" data-artist="anton">
+            <img src="images/viber_image_2026-01-03_19-52-52-334.jpg" alt="Дигитална, котка" loading="lazy">
+          </figure>
+          <figure class="tile" data-artist="anton">
+            <img src="images/viber_image_2026-01-03_19-52-52-837.jpg" alt="Дигитална, магия" loading="lazy">
+          </figure>
+          <figure class="tile" data-artist="anton">
+            <img src="images/viber_image_2026-01-03_19-52-52-910.jpg" alt="Дигитална, герой" loading="lazy">
+          </figure>
+          <figure class="tile" data-artist="anton">
+            <img src="images/viber_image_2026-01-03_19-52-53-563.jpg" alt="Дигитална, меч" loading="lazy">
+          </figure>
+          <figure class="tile" data-artist="anton">
+            <img src="images/viber_image_2026-01-03_19-52-53-623.jpg" alt="Дигитална, котка" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="true"></div>
+    <div class="modal-content" role="dialog" aria-modal="true" aria-label="Преглед на изображение">
+      <button class="modal-close" type="button" aria-label="Затвори" data-close="true">X</button>
+      <img id="modalImg" src="" alt="">
+      <p id="modalCaption" class="muted"></p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-top">
+      <div>
+        <h4>Страници</h4>
+        <a href="nachalo.html">Начало</a>
+        <a href="novini.html">Новини</a>
+        <a href="galeriq.html">Галерия</a>
+        <a href="zanas.html">За нас</a>
+        <a href="kontakti.html">Контакти</a>
+      </div>
+
+      <div>
+        <h4>Социални</h4>
+        <a href="https://www.instagram.com/uevarna/" rel="">Instagram</a>
+        <a href="https://www.tiktok.com/@uestudents" rel="">TikTok</a>
+        <a href="https://www.youtube.com/user/uevarnabg" rel="">YouTube</a>
+      </div>
+
+      <div>
+        <h4>Партньори</h4>
+        <a href="https://www.ue-varna.bg/" rel="">ИУ - Варна</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>ИУ - Варна</span>
+      <span>© Мираела Казанджиева</span>
+      <span>2026</span>
+    </div>
+  </footer>
+</body>
+</html>
